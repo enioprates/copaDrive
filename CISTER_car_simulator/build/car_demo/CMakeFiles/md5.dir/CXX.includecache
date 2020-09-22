@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/src/car_demo/plugins/md5.cpp
+md5.h
+/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/src/car_demo/plugins/md5.h
+cstdio
+-
+
+/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/src/car_demo/plugins/md5.h
+cstring
+-
+iostream
+-
+

@@ -1,0 +1,2 @@
+car_demo:mqtt_bridge-master:prius_description:prius_msgs:ros_its_msgs
+-DCATKIN_DEVEL_PREFIX=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/devel -DCMAKE_INSTALL_PREFIX=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/install -G Unix Makefiles

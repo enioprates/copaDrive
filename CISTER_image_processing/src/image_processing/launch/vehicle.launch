@@ -1,0 +1,55 @@
+<launch>
+	<!--Launch the leader-->
+	<group ns="line_follower">
+		<node pkg="image_processing" name="image" type="lane_lines_detection.py" args="car1"/>
+	</group>
+	
+	<group ns="sim_conector">
+		<node pkg="image_processing" name="conector" type="simulation_connector.py" args="car1" />
+	</group>
+
+	
+	<!--Launch the vehicles-->
+	<group ns="plat_12">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car1 car2"/>
+	</group>	
+
+	
+	<group ns="plat_23">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car2 car3 control" output="screen"/>
+	</group>	
+
+	<group ns="plat_34">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car3 car4 control"/>
+	</group>	
+
+	<group ns="plat_45">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car4 car5 control"/>
+	</group>	
+
+	<!--group ns="plat_56">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car5 car6 control"/>
+	</group-->	
+
+	<!--group ns="plat_67">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car6 car7 control"/>
+	</group>	
+
+	<group ns="plat_78">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car7 car8 control"/>
+	</group>	
+
+	<group ns="plat_89">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car8 car9 control"/>
+	</group>	
+
+	<group ns="plat_9_10">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car9 car10 control"/>
+	</group>	
+
+	<group ns="plat_10_11">
+		<node pkg="image_processing" name="platooning" type="platooning.py" args="car10 car11 control"/>
+	</group-->	
+
+	
+</launch>

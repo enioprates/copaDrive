@@ -1,0 +1,40 @@
+<launch>
+	
+	<!--Launch the listener-->
+	<group ns="list_1">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car1" output="screen"/>
+	</group>	
+
+	<group ns="list_2">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car2"/>
+	</group>	
+	<group ns="list_3">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car3"/>
+	</group>	
+	<group ns="list_4">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car4"/>
+	</group>	
+	<group ns="list_5">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car5"/>
+	</group>	
+	<!--group ns="list_6">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car6"/>
+	</group>	
+	<group ns="list_7">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car7"/>
+	</group>	
+	<group ns="list_8">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car8"/>
+	</group>	
+	<group ns="list_9">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car9"/>
+	</group>	
+	<group ns="list_10">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car10"/>
+	</group>	
+	<group ns="list_11">
+		<node pkg="image_processing" name="listener" type="listener.py" args="car11"/>
+	</group-->	
+
+	
+</launch>

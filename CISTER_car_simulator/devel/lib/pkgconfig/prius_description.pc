@@ -1,0 +1,8 @@
+prefix=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/devel
+
+Name: prius_description
+Description: Description of prius_description
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

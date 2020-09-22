@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="car_name"/>
+	<arg name="init_pose"/>
+	<arg name="init_pose_tf"/>
+	<arg name="model" default="$(find prius_description)/urdf/prius_simplified.urdf"/>
+  	<arg name="rvizconfig" default="$(find car_demo)/rviz/demo.rviz" />
+
+  	<param name="tf_prefix" value="$(arg car_name)_tf" />
+
+  	<!--param name="robot_description" textfile="$(arg model)"/-->
+  	<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find prius_description)/urdf/prius_simplified.urdf'
+					   namespace:=$(arg car_name)
+					   tf_prefix:=$(arg car_name)_tf
+					   " />
+
+	<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" >
+	<!--remap from="robot_description" to="$(arg car_name)_robot_description" /-->
+	<!-- <remap from="joint_states" to="/prius/joint_states" /> -->
+		<param name="tf_prefix" value="$(arg car_name)_tf" />
+	</node>
+	<node pkg="fake_localization" type="fake_localization" name="fake_localization" >
+	<!-- <remap from="base_pose_ground_truth" to="/prius/base_pose_ground_truth"/> -->
+		<param name="tf_prefix" value="$(arg car_name)_tf" />
+	</node>
+
+	<!--remap from="odom" to="$(arg car_name)_tf/odom" /-->
+	<!--remap from="base_link" to="$(arg car_name)_tf/base_link" /-->
+	<!--node pkg="tf2_ros" type="static_transform_publisher" name="very_inaccurate_map" args="$(arg init_pose_tf) map $(arg car_name)_tf/odom"/-->
+	<node pkg="tf2_ros" type="static_transform_publisher" name="very_inaccurate_odom" args="0 0 0 0 0 0 $(arg car_name)_tf/odom $(arg car_name)_tf/base_link"/>
+	<!--node pkg="car_demo" type="joystick_translator" name="joystick_translator"/-->
+
+
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf $(arg init_pose) -model $(arg car_name)">
+		<remap from="base_link" to="$(arg car_name)_tf/base_link"/> 
+	</node>
+	
+	<!--node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /-->
+	<!-- The odometry estimator, throttling, fake laser etc. go here -->
+	<!-- All the stuff as from usual robot launch file -->
+</launch>

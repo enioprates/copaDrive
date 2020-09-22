@@ -1,0 +1,2 @@
+image_processing:prius_msgs:ros_its_msgs
+-DCATKIN_DEVEL_PREFIX=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_image_processing/devel -DCMAKE_INSTALL_PREFIX=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_image_processing/install -G Unix Makefiles

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro.py $(find prius_description)/urdf/prius.urdf" />
+
+  <!-- BEGIN car 2-->
+  <group ns="car2">
+    <param name="tf_prefix" value="car2_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <!--arg name="init_pose" value="-x 24 -y 8 -z 7 -Y 0" /-->
+      <arg name="init_pose" value="-x 30 -y 8 -z 7 -Y 0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car1" />
+    </include>
+  </group>
+
+  <!-- BEGIN car 1-->
+  <group ns="car1">
+    <param name="tf_prefix" value="car1_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <!--arg name="init_pose" value="-x 16 -y 10 -z 7 -Y 0" /-->
+      <arg name="init_pose" value="-x 22 -y 14 -z 7 -Y 0" />
+      <arg name="init_pose_tf" value="-8 0 7 0 0 0" />
+      <arg name="car_name"  value="car2" />
+    </include>
+  </group>
+
+</launch>

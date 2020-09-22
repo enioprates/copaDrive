@@ -1,0 +1,330 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76b8c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_76b8c.dir/build.make CMakeFiles/cmTC_76b8c.dir/build
+make[1]: Entering directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76b8c.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_76b8c.dir/CheckSymbolExists.c.o   -c /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_76b8c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76b8c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_76b8c.dir/CheckSymbolExists.c.o  -o cmTC_76b8c -rdynamic 
+CMakeFiles/cmTC_76b8c.dir/CheckSymbolExists.c.o: na função `main':
+CheckSymbolExists.c:(.text+0x16): referência indefinida a `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_76b8c.dir/build.make:97: recipe for target 'cmTC_76b8c' failed
+make[1]: *** [cmTC_76b8c] Error 1
+make[1]: Leaving directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_76b8c/fast' failed
+make: *** [cmTC_76b8c/fast] Error 2
+
+File /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_efc01/fast"
+/usr/bin/make -f CMakeFiles/cmTC_efc01.dir/build.make CMakeFiles/cmTC_efc01.dir/build
+make[1]: Entering directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_efc01.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_efc01.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_efc01
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efc01.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_efc01.dir/CheckFunctionExists.c.o  -o cmTC_efc01 -rdynamic -lpthreads 
+/usr/bin/ld: não foi possível encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_efc01.dir/build.make:97: recipe for target 'cmTC_efc01' failed
+make[1]: *** [cmTC_efc01] Error 1
+make[1]: Leaving directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_efc01/fast' failed
+make: *** [cmTC_efc01/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00d9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00d9c.dir/build.make CMakeFiles/cmTC_00d9c.dir/build
+make[1]: Entering directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00d9c.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_00d9c.dir/CheckSymbolExists.c.o   -c /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_00d9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00d9c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_00d9c.dir/CheckSymbolExists.c.o  -o cmTC_00d9c -rdynamic 
+CMakeFiles/cmTC_00d9c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_00d9c.dir/build.make:97: recipe for target 'cmTC_00d9c' failed
+make[1]: *** [cmTC_00d9c] Error 1
+make[1]: Leaving directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_00d9c/fast' failed
+make: *** [cmTC_00d9c/fast] Error 2
+
+File /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3bb6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3bb6a.dir/build.make CMakeFiles/cmTC_3bb6a.dir/build
+make[1]: Entering directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3bb6a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3bb6a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3bb6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bb6a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3bb6a.dir/CheckFunctionExists.c.o  -o cmTC_3bb6a -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3bb6a.dir/build.make:97: recipe for target 'cmTC_3bb6a' failed
+make[1]: *** [cmTC_3bb6a] Error 1
+make[1]: Leaving directory '/home/insys/Desktop/ROSintegrationPlatooning/carving/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3bb6a/fast' failed
+make: *** [cmTC_3bb6a/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_41b35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_41b35.dir/build.make CMakeFiles/cmTC_41b35.dir/build
+make[1]: Entering directory '/home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41b35.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_41b35.dir/CheckSymbolExists.c.o   -c /home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_41b35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41b35.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_41b35.dir/CheckSymbolExists.c.o  -o cmTC_41b35 -rdynamic 
+CMakeFiles/cmTC_41b35.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_41b35.dir/build.make:97: recipe for target 'cmTC_41b35' failed
+make[1]: *** [cmTC_41b35] Error 1
+make[1]: Leaving directory '/home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_41b35/fast' failed
+make: *** [cmTC_41b35/fast] Error 2
+
+File /home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3bcfe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3bcfe.dir/build.make CMakeFiles/cmTC_3bcfe.dir/build
+make[1]: Entering directory '/home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3bcfe.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3bcfe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3bcfe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bcfe.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3bcfe.dir/CheckFunctionExists.c.o  -o cmTC_3bcfe -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3bcfe.dir/build.make:97: recipe for target 'cmTC_3bcfe' failed
+make[1]: *** [cmTC_3bcfe] Error 1
+make[1]: Leaving directory '/home/insys/Desktop/ROSintegrationPlatooning/icarus/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3bcfe/fast' failed
+make: *** [cmTC_3bcfe/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c59f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c59f7.dir/build.make CMakeFiles/cmTC_c59f7.dir/build
+make[1]: Entering directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c59f7.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c59f7.dir/CheckSymbolExists.c.o   -c /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c59f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c59f7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c59f7.dir/CheckSymbolExists.c.o  -o cmTC_c59f7 
+CMakeFiles/cmTC_c59f7.dir/CheckSymbolExists.c.o: Na função "main":
+CheckSymbolExists.c:(.text+0x1b): referência não definida para "pthread_create"
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c59f7.dir/build.make:97: recipe for target 'cmTC_c59f7' failed
+make[1]: *** [cmTC_c59f7] Error 1
+make[1]: Leaving directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c59f7/fast' failed
+make: *** [cmTC_c59f7/fast] Error 2
+
+File /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8d6ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8d6ec.dir/build.make CMakeFiles/cmTC_8d6ec.dir/build
+make[1]: Entering directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d6ec.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8d6ec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8d6ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d6ec.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8d6ec.dir/CheckFunctionExists.c.o  -o cmTC_8d6ec -lpthreads 
+/usr/bin/ld: não foi possível localizar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8d6ec.dir/build.make:97: recipe for target 'cmTC_8d6ec' failed
+make[1]: *** [cmTC_8d6ec] Error 1
+make[1]: Leaving directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8d6ec/fast' failed
+make: *** [cmTC_8d6ec/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a348f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a348f.dir/build.make CMakeFiles/cmTC_a348f.dir/build
+make[1]: Entering directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a348f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a348f.dir/CheckSymbolExists.c.o   -c /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a348f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a348f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a348f.dir/CheckSymbolExists.c.o  -o cmTC_a348f 
+CMakeFiles/cmTC_a348f.dir/CheckSymbolExists.c.o: Na função "main":
+CheckSymbolExists.c:(.text+0x1b): referência não definida para "pthread_create"
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a348f.dir/build.make:97: recipe for target 'cmTC_a348f' failed
+make[1]: *** [cmTC_a348f] Error 1
+make[1]: Leaving directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a348f/fast' failed
+make: *** [cmTC_a348f/fast] Error 2
+
+File /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49940/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49940.dir/build.make CMakeFiles/cmTC_49940.dir/build
+make[1]: Entering directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49940.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_49940.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_49940
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49940.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_49940.dir/CheckFunctionExists.c.o  -o cmTC_49940 -lpthreads 
+/usr/bin/ld: não foi possível localizar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_49940.dir/build.make:97: recipe for target 'cmTC_49940' failed
+make[1]: *** [cmTC_49940] Error 1
+make[1]: Leaving directory '/home/enio/OneDrive/Cister/ROS/GazeboTrackPlatoon/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_49940/fast' failed
+make: *** [cmTC_49940/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6300a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6300a.dir/build.make CMakeFiles/cmTC_6300a.dir/build
+make[1]: Entering directory '/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6300a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6300a.dir/CheckSymbolExists.c.o   -c /home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6300a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6300a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6300a.dir/CheckSymbolExists.c.o  -o cmTC_6300a 
+CMakeFiles/cmTC_6300a.dir/CheckSymbolExists.c.o: Na função "main":
+CheckSymbolExists.c:(.text+0x1b): referência não definida para "pthread_create"
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6300a.dir/build.make:97: recipe for target 'cmTC_6300a' failed
+make[1]: *** [cmTC_6300a] Error 1
+make[1]: Leaving directory '/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6300a/fast' failed
+make: *** [cmTC_6300a/fast] Error 2
+
+File /home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3ebc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3ebc.dir/build.make CMakeFiles/cmTC_c3ebc.dir/build
+make[1]: Entering directory '/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3ebc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c3ebc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c3ebc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3ebc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c3ebc.dir/CheckFunctionExists.c.o  -o cmTC_c3ebc -lpthreads 
+/usr/bin/ld: não foi possível localizar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c3ebc.dir/build.make:97: recipe for target 'cmTC_c3ebc' failed
+make[1]: *** [cmTC_c3ebc] Error 1
+make[1]: Leaving directory '/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3ebc/fast' failed
+make: *** [cmTC_c3ebc/fast] Error 2
+
+

@@ -1,0 +1,8 @@
+prefix=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_simulator/install
+
+Name: car_demo
+Description: Description of car_demo
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: gazebo_ros

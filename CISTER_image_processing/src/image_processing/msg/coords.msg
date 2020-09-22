@@ -1,0 +1,9 @@
+float32 X2
+float32 X1
+float32 dif_X
+float32 Y2
+float32 Y1
+float32 dif_Y
+float32 slope
+float32 length
+float32 intercept

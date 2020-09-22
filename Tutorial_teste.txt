@@ -1,0 +1,91 @@
+Copa Drive + OMNET Project 
+
+///////////////////////////////////////////////
+Autor: Bruno
+
+Data de finalização: Em atualização
+
+Componentes: Gazebo, ROS, OMNET
+
+Pre-requisitos: ROS, OMNET, vanetza, inet, veins
+
+Resumo: Sistema de simulação robotica usando comunicação via OMNET
+---------------------------------------------------------------------------------------
+Pastas principais: 
+    CISTER_car_control: 
+        rosbag_player:  Movimentação do Target Vehicle
+        platooning_OMNET:     Movimentação do Subject Vehicle
+    CISTER_car_simulator
+        demo.launch:    cenário dos veiculos
+    artery_ROS
+---------------------------------------------------------------------------------------
+Instalação:
+    ROS
+    Ao trocar os diretorios:
+        - delete cmake caches
+        - Abrir um terminal na pasta /.../CISTER_PlatooningModel/CISTER_car_simulator
+            - catkin_make
+        - Abrir um terminal na pasta /.../CISTER_PlatooningModel/CISTER_car_control
+            - catkin_make
+    
+    OMNET++
+    Vanetza, Inet, Veins (dentro da pasta do Artery)
+    Ao trocar os diretórios:
+        - delete cmake caches
+        - make vanetza + make inet + make veins (delete cmake caches if needed)
+        - delete /build
+        - mkdir build
+        - cd build
+        - cmake ..
+        - *Run*
+---------------------------------------------------------------------------------------
+Caso de Uso
+    Abrir um terminal na pasta /.../CISTER_PlatooningModel/CISTER_car_simulator
+    Executar comandos: 
+        source devel/setup.bash
+        roslaunch car_demo demo.launch
+    Pausar sistema no Gazebo
+    Zerar tempo no Gazebo
+
+    Abrir um terminal na pasta /.../CISTER_PlatooningModel/CISTER_car_control
+    Executar comandos: 
+        source devel/setup.bash
+        rosrun rosbag_player test_BV.bag
+
+    Abrir um terminal na pasta /.../CISTER_PlatooningModel/CISTER_car_control
+    Executar comandos: 
+        source devel/setup.bash
+        rosrun platooning_OMNET car2 car1
+    
+    Abrir um terminal na pasta /.../artery_ROS/artery
+    Executar comandos: 
+        cmake --build build --target run_gazebo-platoon
+        or
+        cmake --build build --target debug_gazebo-platoon (w/ gdb usage)
+    No OMNET
+        - FAST or EXPRESS (no visualization)
+
+    Executar o play no Gazebo
+---------------------------------------------------------------------------------------
+Principais Arquivos:
+    /.../artery/scenarios/gazebo_platoon/Omnetpp.ini
+        Configurações da simulação (tempo de simulação, n carros, area, RSUs, modelos)
+    
+    /.../artery/scenarios/gazebo_platoon/World.ned
+        área dos nós
+        Numero de RSUs, Numero de Carros, Posições iniciais
+    
+    /.../artery_ROS/artery/src/artery/rosomnet/CaService.cc
+        Funcoes referentes a comunicação do tipo CAM
+        Indica recepção e envio de msgs
+
+    /.../artery_ROS/artery/src/artery/rosomnet/RobotMiddleware.cc
+        Funcoes referentes aos nós móveis.
+        Integracao com os tópicos do ROS
+    
+    /.../artery_ROS/artery/src/artery/rosomnet/VehicleDataProvider.cc
+        Interpreta os dados de posicao dos robos
+        
+
+
+

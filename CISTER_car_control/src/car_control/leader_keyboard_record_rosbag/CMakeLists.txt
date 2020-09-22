@@ -1,0 +1,5 @@
+include_directories(${catkin_INCLUDE_DIRS})
+add_executable(leader_keyboard_record_rosbag leader_keyboard_record_rosbag.cpp)
+target_link_libraries(leader_keyboard_record_rosbag ${catkin_LIBRARIES})
+install(TARGETS leader_keyboard_record_rosbag
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

@@ -1,0 +1,2 @@
+set(image_processing_MESSAGE_FILES "/home/enio/OneDrive/Cister/ROS/Inline/CISTER_image_processing/src/image_processing/msg/coords.msg;/home/enio/OneDrive/Cister/ROS/Inline/CISTER_image_processing/src/image_processing/msg/drive_param.msg;/home/enio/OneDrive/Cister/ROS/Inline/CISTER_image_processing/src/image_processing/msg/AckermannDriveStamped.msg;/home/enio/OneDrive/Cister/ROS/Inline/CISTER_image_processing/src/image_processing/msg/error_control.msg")
+set(image_processing_SERVICE_FILES "")

@@ -1,0 +1,8 @@
+prefix=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/install
+
+Name: car_control
+Description: Description of car_control
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

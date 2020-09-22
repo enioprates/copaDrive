@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro.py $(find prius_description)/urdf/prius.urdf" />
+
+  <!-- BEGIN car 1-->
+    <include file="$(find car_demo)/launch/one_car2.launch" >
+      <arg name="init_pose" value="-x 0 -y 0 -z 8 -Y -0.6" />
+      <arg name="car_name"  value="car1" />
+    </include>
+
+
+</launch>

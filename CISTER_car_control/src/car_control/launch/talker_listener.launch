@@ -1,0 +1,4 @@
+<launch>
+  <node name="platooning" pkg="car_control" type="platooning" output="screen"/>
+  <node name="talker" pkg="car_control" type="talker" output="screen"/>
+</launch>

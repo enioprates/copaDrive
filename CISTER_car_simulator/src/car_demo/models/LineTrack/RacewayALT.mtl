@@ -1,0 +1,213 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 27.02.2019 16:14:27
+
+newmtl _RacewayTrack
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Asphalt.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Asphalt.png
+
+newmtl _RacewayAsphalt
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Asphalt.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Asphalt.png
+
+newmtl _RacewayGrass
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Grass.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Grass.png
+
+newmtl _RacewayRumbleStrip_Barrier
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/RumbleStrip&Barrier.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/RumbleStrip&Barrier.png
+
+newmtl _RacewayChecker
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/\Checker.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/\Checker.png
+
+newmtl _RacewayRailing
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Railing.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Railing.png
+
+newmtl _RacewayFence
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Fence.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Fence.png
+	map_d /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Fence_Opacity.png
+
+newmtl _RacewayRoof
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Roof.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Roof.png
+
+newmtl _RacewayWindow
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Window.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Window.png
+
+newmtl _RacewayWall
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Wall.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Wall.png
+
+newmtl _RacewayTrim
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Trim.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Trim.png
+
+newmtl _RacewayTireStack
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/TireStack.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/TireStack.png
+
+newmtl _RacewayBridge
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Bridge.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Bridge.png
+
+newmtl _RacewayConcrete
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Concrete.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Concrete.png
+
+newmtl _RacewayStands
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Stands.png
+	map_Kd /home/guedes/Desktop/ROSintegrationPlatooning/carving/CISTER_car_simulator/src/car_demo/models/sonoma_raceway/materials/textures/Stands.png

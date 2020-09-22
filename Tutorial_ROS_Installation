@@ -1,0 +1,64 @@
+//----------------------------------------------------------------
+//Tutorial para Instalação ROS e Gazebo 
+//VERSION:1.0
+//Date: 31/01/2020
+//Pre requisitos:
+//	Ubuntu 18.04
+//----------------------------------------------------------------
+			ROS Installation
+- http://wiki.ros.org/ROS/Installation
+	Check your linux version
+- Install Ros Melodic: http://wiki.ros.org/melodic/Installation/Ubuntu
+	- Already installed GAZEBO
+------------------------------------------------------------------
+			COPADRIVE Simulator Running
+- Download files from bitbuckets
+- Apagar os arquivos "cache" do copadrive
+- Open a new terminal inside ~/GazeboTrackPlatoon/CISTER_car_simulator
+- catkin_make
+------------------------------------------------------------------
+Errors and solutions:
+- You should follow the steps described in https://github.com/osrf/car_demo/pull/43/commits/fd7bcc74cbc502adb005b1b4bb8129c16c6cdf36
+	OR
+- Replace the following lines:
+	car_demo/CMakeLists.txt
+		(current)
+		l 14:	find_package(gazebo 8 REQUIRED)	
+		l 15:	find_package(ignition-msgs0 REQUIRED)
+		(new)				
+		l 14: 	find_package(gazebo 9 REQUIRED)
+		l 15:	find_package(ignition-msgs1 REQUIRED)
+	car_demo/plugins/gazebo_ros_block_laser.cpp
+		(new)
+		l 28:	#include <ignition/math/Pose3.hh>
+		
+		(current)
+		l 85:	last_update_time_ = this->world_->GetSimTime();
+		(new)
+  		l 85: last_update_time_ = this->world_->SimTime();
+		
+		(current)
+		l 408: 	math::Pose pose;
+		l 409:  pose.pos.x = 0.5*sin(0.01*this->sim_time_.Double());
+		l 410:  gzdbg << "plugin simTime [" << this->sim_time_.Double() << "] update pose [" << pose.pos.x << "]\n";
+		(new)
+		l 408:	ignition::math::Pose3d pose;
+		l 409:  pose.Pos().X() = 0.5*sin(0.01*this->sim_time_.Double());
+		l 410  gzdbg << "plugin simTime [" << this->sim_time_.Double() << "] update pose [" << pose.Pos().X() << "]\n";
+- source devel/setup.launch
+- roslaunch car_demo demo_launch
+-------------------------------------------------------
+		COPADRIVE Control algorithms
+- Open a new terminal inside ~/GazeboTrackPlatoon/CISTER_car_control
+- catkin_make		
+Error and solutions:
+	Install SDL2:	sudo apt-get install libsdl2-dev
+- source devel/setup.launch
+- rosrun car_control leader_keyboard_stable_speed car1
+--------------------------------------------------------
+		Python 
+- executable files: 	chmod +x <NAME_OF_THE_FILE>.py
+- libraries:		sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
+
+

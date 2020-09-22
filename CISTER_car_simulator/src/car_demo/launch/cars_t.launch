@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro.py $(find prius_description)/urdf/prius.urdf" />
+
+  <!-- BEGIN car 1-->
+  <group ns="car1">
+    <param name="tf_prefix" value="car1_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 20 -y 10.5 -z 1.5 -Y 0.0" />
+      <!--arg name="init_pose" value="-x 180 -y 10 -z 1 -Y 3.14" /-->
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car1" />
+    </include>
+  </group>
+
+  <!--group ns="car2">
+    <param name="tf_prefix" value="car2_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 90 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car2" />
+    </include>
+  </group>
+
+  <group ns="car3">
+    <param name="tf_prefix" value="car3_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 80 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car3" />
+    </include>
+  </group>
+
+  <group ns="car4">
+    <param name="tf_prefix" value="car4_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 70 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car4" />
+    </include>
+  </group>
+
+  <group ns="car5">
+    <param name="tf_prefix" value="car5_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 60 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car5" />
+    </include>
+  </group-->
+
+  <!--group ns="car6">
+    <param name="tf_prefix" value="car6_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 50 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car6" />
+    </include>
+  </group>
+
+  <group ns="car7">
+    <param name="tf_prefix" value="car7_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 40 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car7" />
+    </include>
+  </group>
+
+  <group ns="car8">
+    <param name="tf_prefix" value="car8_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 30 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car8" />
+    </include>
+  </group>
+
+  <group ns="car9">
+    <param name="tf_prefix" value="car9_tf" />
+    
+    <include file="$(find car_demo)/launch/one_car.launch" >
+      <arg name="init_pose" value="-x 20 -y 3.75 -z 1 -Y 0.0" />
+      <arg name="init_pose_tf" value="0 0 7 0 0 0" />
+      <arg name="car_name"  value="car9" />
+    </include>
+  </group-->
+
+
+</launch>

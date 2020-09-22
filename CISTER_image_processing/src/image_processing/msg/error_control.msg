@@ -1,0 +1,8 @@
+float32 error_steer
+float32 control_error_steer
+float32 steer_integral
+float32 steer_deriv
+float32 pid_error_value
+float32 theta_error_value
+float32 dist_tv
+int32 status

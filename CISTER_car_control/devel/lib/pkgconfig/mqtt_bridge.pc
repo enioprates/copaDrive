@@ -1,0 +1,8 @@
+prefix=/home/enio/OneDrive/Cister/ROS/Inline/CISTER_car_control/devel
+
+Name: mqtt_bridge
+Description: Description of mqtt_bridge
+Version: 0.1.6
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
