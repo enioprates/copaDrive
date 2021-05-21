@@ -117,7 +117,17 @@
 - Bearing control (ON OFF)
 ````
 
-
-
+## Launch Files:
+````
+In order to run several files together, we create some launch files:
+- Leader and Follower(s)
+	- Open a new terminal inside ~/CISTER_image_processing
+	- source devel/setup.launch
+	- roslaunch image_processing vehicles.launch
+- Recording data
+	- Open a new terminal inside ~/CISTER_image_processing
+	- source devel/setup.launch
+	- roslaunch image_processing listener.launch
+````
 
 
